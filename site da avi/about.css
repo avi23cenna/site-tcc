@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: #b28c1b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    width: 400px;
+    height: 40px;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #b28c1b;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 0 20px 20px 0;
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 45px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    color: #b28c1b;
+    text-decoration: none;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon,
+.user-icon {
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+.user-icon a,
+.cart-icon a {
+    color: #b28c1b;
+    text-decoration: none;
+}
+main {
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 219px;
+    margin-bottom: 119px;
+    max-width: 1444px;
+    width: 100%;
+}
+
+
+
+
+.retan_amarelo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    text-align: start;
+    width: 100%;
+    color: goldenrod;
+    padding: 20px;
+    font-size: larger;
+    }
+.retan_amarelo p{
+    width: 50%;
+    margin-right: 50%;
+    }
+
+.retan_preto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba(253, 253, 249, 0.806);
+    height: 300px;
+    text-align: end;
+    width: 100%;
+    color: goldenrod;
+    padding: 20px;
+    font-size: larger;
+    }
+
+    .retan_preto p{
+        width: 50%;
+        margin-left: 50%;
+        }
+
+
+        footer {
+            background-color: black;
+            color: #b28c1b;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+@media screen and (max-width: 768px) {
+    .header-grid {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-bar input[type="text"] {
+        width: 150px;
+    }
+}

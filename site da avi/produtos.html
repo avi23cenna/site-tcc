@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avicenna 23</title><link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="header-grid">
+
+            <div class="logo">
+                <img src="img/Logo.jpg" alt="">
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit">Buscar</button>
+            </div>
+
+            <div class="icons-container">
+
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="user-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <nav class="menu">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <div class="opitions">
+
+            <ul>
+                <h3>Aromas</h3>
+                <li><input type="radio" id="aroma1" name="3" value="1" onclick="aromaDoce()"> <label for="aroma1">Doce</label> </li>
+                <li><input type="radio" id="aroma2" name="3" value="2" onclick="aromaAmadeirado()"> <label for="aroma2">Amadeirado</label> </li>
+                <li><input type="radio" id="aroma3" name="3" value="3" onclick="aromaCitrico()"> <label for="aroma3">Citrico</label> </li>
+            </ul>
+
+            <ul>
+                <h3>Frascos</h3>
+                <li><input type="radio" id="frasc1" name="1" value="1" onclick="valor1()"> <label for="frasc1">Frasco 1</label> </li>
+                <li><input type="radio" id="frasc2" name="1" value="2" onclick="valor2()"> <label for="frasc2">Frasco 2</label> </li>
+                <li><input type="radio" id="frasc3" name="1" value="3" onclick="valor3()"> <label for="frasc3">Frasco 3</label> </li>     
+            </ul>
+
+            <ul>
+                <h3>Cores</h3> 
+                <li><input class="perfume1" type="radio" id="cor1" name="2" value="1" onclick="escolhaDourado()"> <label for="cor1">Dourado</label> </li>
+                <li><input class="perfume" type="radio" id="cor2" name="2" value="2" onclick="escolhaAzul()"> <label for="cor2">Azul</label> </li>
+                <li><input class="perfume" type="radio" id="cor3" name="2" value="3" onclick="escolhaVermelho()"> <label for="cor3">Vermelho</label> </li>
+                <li><input class="perfume" type="radio" id="cor4" name="2" value="4" onclick="escolhaVerde()"> <label for="cor4">Verde</label> </li>
+                <li><input class="perfume" type="radio" id="cor5" name="2" value="5" onclick="escolhaRosa()"> <label for="cor5">Rosa</label> </li>
+                <li><input class="perfume" type="radio" id="cor6" name="2" value="6" onclick="escolhaMarrom()"> <label for="cor6">Marrom</label> </li>
+            </ul>
+
+            
+
+        </div>
+
+        <div class="result">
+
+            <h3>Pré-visualização</h3>
+
+            <div id="imgPerfum" class="ImgPerfum">
+                <img id="perfum" src="img/textura-branca-com-superficie-listrada-redonda-capa-mole-branca_547648-928.avif" alt=""> 
+            </div>
+
+            <div class="quant-result">
+
+                <button id="but-quant" onclick="abaixaQtd()">-</button>
+                <p id="quant-porções"></p>
+                <button id="but-quant" onclick="aumentaQtd()">+</button>
+
+            </div>
+
+            <p id="result-final">R$: 00,00</p>
+
+            <button id="add" onclick="parou()">Adicionar ao Carrinho</button>
+
+            <p onclick="reset()">cancelar o pedido</p>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+
+            </div>
+
+        <div class="contact-info">
+            <p>Endereço: Rua João Tavares, 27</p>
+            <p>Telefone: (11)2025-6712</p>
+            <p>Email: avicenna2323@gmail.com</p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Avicenna. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/e1a7f0b418.js" crossorigin="anonymous"></script>
+    <script src="script-produtos.js"></script>
+
+    
+</body>
+</html>
